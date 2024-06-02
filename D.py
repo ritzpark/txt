@@ -10,3 +10,5 @@ def get_connected_devices():
             mac = split_line[1].strip(")").replace(" ", ":")
             devices[ip] = mac
     return devices
+
+print(get_connected_devices())
