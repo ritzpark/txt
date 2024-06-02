@@ -1,7 +1,7 @@
 import subprocess
 
 def get_connected_devices():
-    output = subprocess.check_output(["sudo", "arp", "-a"])
+    output = subprocess.check_output(["arp", "-a"])
     devices = {}
     for line in output.splitlines():
         if "(" in line:
